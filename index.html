@@ -6,12 +6,13 @@
   </head>
   <body>
     <a-scene id = "scene">
-      
-      <a-sphere position="0 1.25 -3" radius="1.25" color="white"></a-sphere>
-      <a-sphere position="0 2.5 -3" radius="1" color="white"></a-sphere>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
+      <a-entity id = "a" position = "0 0 -5" gltf-model = "url(/a.glb)" scale = "0.1 0.1 0.1"></a-entity>
+      <a-entity position = "0 0 -5" gltf-model = "url(/b.glb)" scale = "0.1 0.1 0.1"></a-entity>
+      <a-entity position = "0 0 0" gltf-model = "url(/c.glb)" scale = "0.1 0.1 0.1"></a-entity>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="100" height="100" color="#7BC8A4"></a-plane>
       <a-sky color="blue"></a-sky>
     </a-scene>
       <script src = "script.js"> </script>
   </body>
 </html>
+
